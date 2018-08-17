@@ -1,21 +1,44 @@
 /**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+page{
+  background: #586b95;
+  height: 100%;
+}
+.container{
+  
+  /* box-shadow: 0px -60rpx 40rpx 50rpx black ; */
+  height: 100%;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.content-wrap{
+  width: 100%;
+  height: 100%;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+.index-content{
+  margin-top: 280rpx;
+}
+.index-bg image{
+  width: 380rpx;
+  height: 318rpx;
+}
+.index-bg-text{
+  margin-top: 116rpx;
+  text-align: center;
+  color: #aab0bd;
+  font-size: 30rpx;
 }
 
-.usermotto {
-  margin-top: 200px;
+.jietiaoBtn{
+    width: 100%;
+    position: absolute;
+    left: 0rpx;
+    bottom: 76rpx;
+}
+.jietiaoBtn button{
+  width: 360rpx;
+  height: 100rpx;
+  font-size: 36rpx;
+  color: #fff;
+  border-radius: 100rpx;
+  background: #3d4b68;
 }

@@ -1,0 +1,27 @@
+<!--pages/registerForm/registerForm.wxml-->
+<view class="container">
+  <view class='box_shadow'></view>
+  <view class='registerForm-con'>
+    <view class='userInfo column cen-center'>
+        <view class='user-img'>
+          <image src='{{avatarUrl}}'></image>
+        </view>
+        <view class='user-name'>{{nickName}}<text class='ft10 row end-cen'>(借款人)</text></view>
+    </view>
+    <view class='register-form'>
+        <view class='form-list'>
+          <view class='ft18'>借款人</view>
+          <input  placeholder='填写真实姓名' placeholder-class='placeholder'></input>
+        </view>
+        <view class='form-list'>
+          <view class='ft18'>借款人</view>
+          <input  placeholder='填写真实姓名' placeholder-class='placeholder'></input>
+        </view>
+        <view class='form-list'>
+          <view class='ft18'>借款人</view>
+          <input class='mt0'  placeholder='填写真实姓名' placeholder-class='placeholder'></input>
+        </view>
+    </view>
+  </view>
+
+</view>

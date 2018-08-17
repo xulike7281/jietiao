@@ -1,4 +1,17 @@
 <!--index.wxml-->
 <view class="container">
- 
+  <!-- <view class='box_shadow'></view> -->
+  <view class='content-wrap row start-cen'>
+    <view class='index-content'>
+      <view class='index-bg'>
+        <image src='../../static/img/index_bg.png'></image>
+      </view>
+      <view class='index-bg-text'>
+        <text>点 击 "打 借 条" 发 起 新 借 条</text>
+      </view>
+    </view>
+    <view class='jietiaoBtn'>
+      <button open-type='getUserInfo' bindgetuserinfo="getUserInfo">打 借 条</button>
+    </view>
+  </view>
 </view>

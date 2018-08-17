@@ -2,6 +2,11 @@
 view{
   box-sizing: border-box;
 }
+.box_shadow{
+  width: 100%;
+   box-shadow: 0px -60rpx 40rpx 50rpx black ;
+   z-index: 999;
+}
 .placeholder {
   color: #bdbdbd;
   font-size: 32rpx;
@@ -9,8 +14,10 @@ view{
 
 page {
   width: 100%;
+  background: #586b95;
+  height: 100%;
   overflow: auto;
-  background: #f5f5f5;
+  
 }
 .arrow{
   width: 23rpx;
@@ -110,6 +117,10 @@ page {
 .cen-end {
   align-items: center;
   justify-content: flex-end;
+}
+.end-cen {
+  align-items: flex-end;
+  justify-content:center ;
 }
 
 .cen-center {

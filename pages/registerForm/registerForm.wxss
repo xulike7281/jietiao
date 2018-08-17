@@ -1,0 +1,64 @@
+/* pages/registerForm/registerForm.wxss */
+.registerForm-con{
+  width: 672rpx;
+  /* height: 100rpx; */
+  background: #fff;
+  border-radius:0 0 15rpx 15rpx;
+}
+
+/* 用户信息 */
+.userInfo{
+  width: 100%;
+  padding-top:50rpx; 
+}
+.user-img{
+  width: 122rpx;
+  height: 122rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.user-img image{
+  width: 100%;
+  height: 100%;
+}
+.user-name{
+  margin-top: 10rpx;
+  color: #a29e9e;
+  position: relative;
+}
+.user-name text{
+  height: 100%;
+  position: absolute;
+  top: 0rpx;
+  right: -70%;
+}
+
+
+
+/* 表单 */
+.register-form{
+  width: 100%;
+  margin-top: 95rpx;
+  padding: 0 40rpx 44rpx 40rpx;
+  color: #a29e9e;
+}
+.form-list{
+  width: 100%;
+  margin-bottom: 60rpx;
+}
+.form-list input{
+  width: 100%;
+  height: 80rpx;
+  padding-left: 20rpx;
+  margin-top: 10px;
+  box-sizing: border-box;
+  border:  1px solid #ccc;
+  border-radius: 8rpx;
+}
+.mt0{
+  margin-bottom: 0rpx;
+}
+.placeholder{
+  color: #a29e9e;
+  font-size: 28rpx;
+}
