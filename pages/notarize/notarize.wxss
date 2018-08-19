@@ -1,0 +1,157 @@
+/* pages/notarize/notarize.wxss */
+
+.container {
+  color: #9a9a9a;
+}
+
+.content {
+  width: 670rpx;
+  background: #fff;
+  padding: 60rpx 58rpx 26rpx 58rpx;
+}
+
+.money {
+  width: 100%;
+  margin-bottom: 60rpx;
+  text-align: center;
+  color: #4b4b4b;
+}
+
+.avatarUrls {
+  width: 100%;
+  padding: 0 48rpx;
+  margin-bottom: 60rpx;
+}
+
+.jiekuanren text {
+  font-size: 24rpx;
+  color: #9a9a9a;
+}
+
+.jiekuanren .img-wrap {
+  width: 64rpx;
+  height: 64rpx;
+  border: 1px dashed #ccc;
+  border-radius: 50%;
+}
+
+.img-wrap image {
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 50%;
+}
+
+.border-none {
+  border: none !important;
+}
+
+.jiekuan-time {
+  text-align: center;
+}
+
+.cen-line {
+  width: 670rpx;
+  height: 2rpx;
+  background: #576c94;
+  position: relative;
+}
+
+.cen-line::after {
+  display: block;
+  content: "";
+  position: absolute;
+  left: -10rpx;
+  top: -10rpx;
+  width: 20rpx;
+  height: 20rpx;
+  background: #576c94;
+  border-radius: 50%;
+}
+
+.cen-line::before {
+  display: block;
+  content: "";
+  position: absolute;
+  right: -10rpx;
+  top: -10rpx;
+  width: 20rpx;
+  height: 20rpx;
+  background: #576c94;
+  border-radius: 50%;
+}
+
+.select-info {
+  width: 670rpx;
+  background: #fff;
+  padding: 52rpx 42rpx;
+  border-radius: 0 0 12rpx 0pc;
+} 
+
+.select-wrap {
+}
+
+.role {
+  margin-bottom: 16rpx;
+}
+
+.role-con {
+  width: 100%;
+  height: 80rpx;
+}
+
+.con-left, .con-right {
+  height: 100%;
+  flex: 1;
+  border: 1px solid #ccc;
+}
+
+.con-left {
+  border-radius: 10rpx 0 0 10rpx;
+  border-right: none;
+}
+
+.con-right {
+border-radius: 0 10rpx 10rpx 0;  
+}
+
+.con-image  {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 8rpx;
+}
+
+.backgrund-576c94 {
+  background: #99a6bf;
+  color: #ecf3f9;
+  border: 1px solid #99a6bf;
+}
+
+.name{
+ margin: 64rpx 0 16rpx 0;
+}
+.name-input{
+  width: 100%;
+}
+
+.name-input input{
+  width: 100%;
+  height: 80rpx;
+  border: 1px solid #ccc;
+  border-radius: 10rpx;
+  padding-left: 18rpx;
+  box-sizing: border-box;
+}
+.placeholder{
+   color: #9a9a9a;
+   font-size: 28rpx;
+}
+
+.btn-wrap{
+  position: absolute;
+  bottom: 72rpx;
+  margin: 0 auto;
+
+}
+.btn{
+  margin:  30rpx auto  0 auto;
+}

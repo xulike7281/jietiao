@@ -1,0 +1,95 @@
+/* pages/main/main.wxss */
+
+.content {
+  width: 670rpx;
+  background: #fff;
+  margin-top: 20rpx;
+  border-radius: 14rpx 14rpx 0 0;
+  padding: 70rpx  58rpx 74rpx 58rpx;
+  color: #9a9a9a;
+}
+
+.money {
+  width: 100%;
+  margin:0rpx 0rpx 88rpx 0rpx;
+  text-align: center;
+  color: #4b4b4b;
+}
+
+.avatarUrls {
+  width: 100%;
+  padding: 0 48rpx 46rpx 48rpx;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 48rpx; 
+}
+
+.jiekuanren text {
+  font-size: 24rpx;
+  color: #9a9a9a;
+}
+
+.jiekuanren .img-wrap {
+  width: 64rpx;
+  height: 64rpx;
+  border: 1px dashed #ccc;
+   border-radius: 50%;
+}
+
+.img-wrap image {
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 50%;
+}
+.border-none{
+  border: none!important;
+}
+
+.main-time{
+  margin-bottom: 74rx;
+  padding: 0 22rpx;
+}
+.j-time,.cen-space,.h-time{
+  flex: 1;
+  font-size: 24rpx;
+}
+.main-btn{
+  width: 670rpx;
+  height: 100rpx;
+  background: #2f4774;
+  border-radius: 0 0 14rpx 14rpx;
+  font-size: 24rpx;
+  color: #fff;
+
+}
+.main-btn image{
+  display: inline-block;
+  width: 28rpx;
+  height: 28rpx;
+  margin-right: 8rpx;
+}
+
+.dot-wrap{
+  width: 100%;
+  margin-top: 32rpx;
+  margin-bottom: 68rpx;
+}
+.dot{
+  width: 16rpx;
+  height: 16rpx;
+  background: #9a9a9a;
+  border-radius: 50%;
+  margin-right: 14rpx;
+}
+.dot:last-child{
+  margin-right: 0rpx;
+}
+.big-dot{
+  width: 20rpx;
+  height: 20rpx;
+  background: #fff;
+}
+.btn{
+  position: absolute;
+  bottom: 72rpx;
+  margin: 0 auto;
+}

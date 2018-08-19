@@ -11,10 +11,13 @@ view{
   color: #bdbdbd;
   font-size: 32rpx;
 }
+.color-b1babc{
+ color: #b1babc;
+}
 
 page {
   width: 100%;
-  background: #586b95;
+  background: #576c94;
   height: 100%;
   overflow: auto;
   
@@ -376,4 +379,15 @@ page {
 }
 .line-through{
   text-decoration:line-through;
+}
+.btn{
+   width: 360rpx;
+  height: 100rpx;
+  margin-top: 30rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 36rpx;
+  color: #fff;
+  border-radius: 100rpx;
+  background: #3d4b68;
 }

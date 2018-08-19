@@ -1,26 +1,26 @@
-// pages/registerForm/registerForm.js
-const app = getApp()
+// pages/notarize/notarize.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    date:"设定偿还日期"
-  },
-  bindDateChange: function (e) {
-    console.log('picker发送选择改变，携带值为', e.detail.value)
-    this.setData({
-      date: e.detail.value
-    })
+    defalut_img: "../../static/img/role-icon.png",
+    avtive_img:"../../static/img/role-icon-while.png"
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
+  config:function(){
+   
+  },
   onLoad: function (options) {
-    this.setData(app.globalData.userInfo)
-    console.log(app.globalData.userInfo)
+
+     // 更换页面的title 
+    // wx.setNavigationBarTitle({
+    //   title: "确认作废"
+    // })
   },
 
   /**

@@ -1,6 +1,6 @@
 /**index.wxss**/
 page{
-  background: #586b95;
+ 
   height: 100%;
 }
 .container{
@@ -24,7 +24,7 @@ page{
 .index-bg-text{
   margin-top: 116rpx;
   text-align: center;
-  color: #aab0bd;
+  color: #b1babc;
   font-size: 30rpx;
 }
 
@@ -32,7 +32,7 @@ page{
     width: 100%;
     position: absolute;
     left: 0rpx;
-    bottom: 76rpx;
+    bottom: 72rpx;
 }
 .jietiaoBtn button{
   width: 360rpx;

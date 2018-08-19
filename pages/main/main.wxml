@@ -1,0 +1,51 @@
+<!--pages/main/main.wxml-->
+<view class='container'>
+  <view class='content'>
+    <view class='money'>￥1000.00 </view>
+    <view class='avatarUrls row cen-space'>
+      <view class='jiekuanren column cen-center'>
+        <view class='img-wrap'>
+          <image src='https://wx.qlogo.cn/mmopen/vi_32/dw2Y9zmicR7U4ACqUWLsmf3icLBr6g2xicST2XmTrX35HVVFWtoicDgNvJUnYicdQiaCXYxibLZdWtSJeLrCiaCJrX3DZQ/132'></image>
+        </view>
+        <text class='margin10-top'>张三</text>
+        <text>借款人</text>
+      </view>
+      <view class='jiekuanren column cen-center'>
+        <view class='img-wrap border-none'>
+          <image src='https://wx.qlogo.cn/mmopen/vi_32/dw2Y9zmicR7U4ACqUWLsmf3icLBr6g2xicST2XmTrX35HVVFWtoicDgNvJUnYicdQiaCXYxibLZdWtSJeLrCiaCJrX3DZQ/132'></image>
+        </view>
+        <text class='margin10-top'>张三</text>
+        <text>借款人</text>
+      </view>
+      <view class='jiekuanren column cen-center'>
+        <view class='img-wrap {{!borderFlag?"border-none":""}}'>
+          <image wx-if="{{!borderFlag}}" src='https://wx.qlogo.cn/mmopen/vi_32/dw2Y9zmicR7U4ACqUWLsmf3icLBr6g2xicST2XmTrX35HVVFWtoicDgNvJUnYicdQiaCXYxibLZdWtSJeLrCiaCJrX3DZQ/132'></image>
+        </view>
+        <text class='margin10-top'>张三</text>
+        <text>借款人</text>
+      </view>
+    </view>
+    <view class='main-time row cen-sapce'>
+      <view class='j-time column cen-center'>
+        <text>2018.09.10</text>
+        <text>借款日</text>
+      </view>
+      <view class='cen-space'></view>
+      <view class='h-time column cen-center'>
+        <text>2018.09.10</text>
+        <text>借款日</text>
+      </view>
+    </view>
+  </view>
+  <view class='main-btn row cen-center'>
+    <image src='../../static/img/delete_icon.png'></image>
+    <text>撤销</text>
+  </view>
+  <view class='dot-wrap row cen-center'>
+      <text class='dot {{item.id ==0?"big-dot":""}}' wx:for="{{dotList}}" wx:key="{{index}}"></text>
+  </view>
+  <view class='color-b1babc ft14'> 
+    有1条借条等待借款人和见证人认证 
+  </view>
+  <view class='btn'>打借条</view>
+</view>

@@ -1,0 +1,61 @@
+<!--pages/notarize/notarize.wxml 借条确认-->
+<view class='container'>
+  <view class='box_shadow'></view>
+  <view class='content'>
+    <view class='money'>￥1000.00 </view>
+    <view class='avatarUrls row cen-space'>
+      <view class='jiekuanren column cen-center'>
+        <view class='img-wrap'>
+          <image src='https://wx.qlogo.cn/mmopen/vi_32/dw2Y9zmicR7U4ACqUWLsmf3icLBr6g2xicST2XmTrX35HVVFWtoicDgNvJUnYicdQiaCXYxibLZdWtSJeLrCiaCJrX3DZQ/132'></image>
+        </view>
+        <text class='margin10-top'>张三</text>
+        <text>借款人</text>
+      </view>
+      <view class='jiekuanren column cen-center'>
+        <view class='img-wrap border-none'>
+          <image src='https://wx.qlogo.cn/mmopen/vi_32/dw2Y9zmicR7U4ACqUWLsmf3icLBr6g2xicST2XmTrX35HVVFWtoicDgNvJUnYicdQiaCXYxibLZdWtSJeLrCiaCJrX3DZQ/132'></image>
+        </view>
+        <text class='margin10-top'>张三</text>
+        <text>借款人</text>
+      </view>
+      <view class='jiekuanren column cen-center'>
+        <view class='img-wrap {{!borderFlag?"border-none":""}}'>
+          <image wx-if="{{!borderFlag}}" src='https://wx.qlogo.cn/mmopen/vi_32/dw2Y9zmicR7U4ACqUWLsmf3icLBr6g2xicST2XmTrX35HVVFWtoicDgNvJUnYicdQiaCXYxibLZdWtSJeLrCiaCJrX3DZQ/132'></image>
+        </view>
+        <text class='margin10-top'>张三</text>
+        <text>借款人</text>
+      </view>
+    </view>
+    <view class='jiekuan-time'>
+      <text class='ft14'>借款周: </text>
+      <text class='ft14'>2018.01.08-2018.09.01</text>
+    </view>
+
+  </view>
+  <view class='cen-line'></view>
+  <block wx-if="{{false}}">
+  <view class='select-info'>
+    <view class='select-wrap'>
+      <view class='role ft16'>选择角色</view>
+      <view class='role-con row cen-center'>
+        <view class='con-left row cen-center {{!active_img?" backgrund-576c94":""}}'>
+          <image class='con-image' src='{{!active_img?"../../static/img/role-icon-while.png":"../../static/img/role-icon.png"}}'></image>
+          <text class='ft14'>我是出借人</text>
+        </view>
+        <view class='con-right row cen-center'>
+          <image class='con-image' src='../../static/img/role-icon.png'></image>
+          <text class='ft14'>我是见证人</text>
+        </view>
+      </view>
+      <view class='name ft16'>选择角色</view>
+      <view class='name-input'>
+        <input placeholder='请填写真实姓名' placeholder-class='placeholder'></input>
+      </view>
+    </view>
+  </view>
+  </block>
+  <view class='btn-wrap '>
+    <text class='color-b1babc ft14'>点 击 "借 条 确 认" 确 认 借 款 事 实</text>
+    <view class='btn' bindtap='config'>借条确认</view>
+  </view>
+</view>

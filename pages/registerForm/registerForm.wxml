@@ -3,25 +3,33 @@
   <view class='box_shadow'></view>
   <view class='registerForm-con'>
     <view class='userInfo column cen-center'>
-        <view class='user-img'>
-          <image src='{{avatarUrl}}'></image>
-        </view>
-        <view class='user-name'>{{nickName}}<text class='ft10 row end-cen'>(借款人)</text></view>
+      <view class='user-img'>
+        <image src='{{avatarUrl}}'></image>
+      </view>
+      <view class='user-name'>{{nickName}}
+        <text class='ft10 row end-cen'>(借款人)</text>
+      </view>
     </view>
     <view class='register-form'>
-        <view class='form-list'>
-          <view class='ft18'>借款人</view>
-          <input  placeholder='填写真实姓名' placeholder-class='placeholder'></input>
-        </view>
-        <view class='form-list'>
-          <view class='ft18'>借款人</view>
-          <input  placeholder='填写真实姓名' placeholder-class='placeholder'></input>
-        </view>
-        <view class='form-list'>
-          <view class='ft18'>借款人</view>
-          <input class='mt0'  placeholder='填写真实姓名' placeholder-class='placeholder'></input>
-        </view>
+      <view class='form-list'>
+        <view class='ft14'>借款人</view>
+        <input placeholder='填写真实姓名' placeholder-class='placeholder'></input>
+      </view>
+      <view class='form-list'>
+        <view class='ft14'>借款金额</view>
+        <input type='number' placeholder='填写借款金额' placeholder-class='placeholder'></input>
+      </view>
+      <view class='form-list mt0'>
+        <view class='ft14'>偿还日期</view>
+        <picker mode="date" value="{{date}}" start="2015-09-01" end="2020-09-01" bindchange="bindDateChange">
+          <view class="pickerDate">{{date}} </view>
+        </picker>
+
+      </view>
     </view>
   </view>
-
+  <view class='button-wrap'>
+    <view class='ft12'>点击"发起借条"分享至借款人和见证人</view>
+  </view>
+  <view class='form-btn'>发起借条</view>
 </view>

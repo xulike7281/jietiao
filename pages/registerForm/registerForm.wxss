@@ -1,64 +1,106 @@
 /* pages/registerForm/registerForm.wxss */
-.registerForm-con{
+
+.registerForm-con {
   width: 672rpx;
   /* height: 100rpx; */
   background: #fff;
-  border-radius:0 0 15rpx 15rpx;
+  border-radius: 0 0 15rpx 15rpx;
 }
 
 /* 用户信息 */
-.userInfo{
+
+.userInfo {
   width: 100%;
-  padding-top:50rpx; 
+  padding-top: 50rpx;
 }
-.user-img{
+
+.user-img {
   width: 122rpx;
   height: 122rpx;
   border-radius: 50%;
   overflow: hidden;
 }
-.user-img image{
+
+.user-img image {
   width: 100%;
   height: 100%;
 }
-.user-name{
+
+.user-name {
   margin-top: 10rpx;
   color: #a29e9e;
   position: relative;
 }
-.user-name text{
+
+.user-name text {
   height: 100%;
   position: absolute;
   top: 0rpx;
   right: -70%;
 }
 
-
-
 /* 表单 */
-.register-form{
+
+.register-form {
   width: 100%;
   margin-top: 95rpx;
   padding: 0 40rpx 44rpx 40rpx;
-  color: #a29e9e;
+  color: #9a9a9a;
 }
-.form-list{
+
+.form-list {
   width: 100%;
   margin-bottom: 60rpx;
 }
-.form-list input{
+
+.form-list input {
   width: 100%;
   height: 80rpx;
   padding-left: 20rpx;
   margin-top: 10px;
   box-sizing: border-box;
-  border:  1px solid #ccc;
+  border: 1px solid #c1c1c1;
   border-radius: 8rpx;
+  font-size: 24rpx;
 }
-.mt0{
+
+.pickerDate {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 24rpx;
+  padding-left: 20rpx;
+  margin-top: 10px;
+  box-sizing: border-box;
+  border: 1px solid #c1c1c1;
+  border-radius: 8rpx;
+  color: #aeaeae;
+}
+
+.mt0 {
   margin-bottom: 0rpx;
 }
-.placeholder{
-  color: #a29e9e;
-  font-size: 28rpx;
+
+.placeholder {
+  color: #aeaeae;
+  font-size: 24rpx;
+}
+
+.button-wrap {
+  margin-top: 70rpx;
+  color: #b1babc;
+}
+
+.form-btn {
+  width: 360rpx;
+  height: 100rpx;
+  position: absolute;
+  bottom: 72rpx;
+  margin: 0 auto;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 36rpx;
+  color: #fff;
+  border-radius: 100rpx;
+  background: #3d4b68;
 }
