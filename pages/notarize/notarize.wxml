@@ -33,27 +33,61 @@
 
   </view>
   <view class='cen-line'></view>
+  <!-- 选择角色 -->
   <block wx-if="{{false}}">
-  <view class='select-info'>
-    <view class='select-wrap'>
-      <view class='role ft16'>选择角色</view>
-      <view class='role-con row cen-center'>
-        <view class='con-left row cen-center {{!active_img?" backgrund-576c94":""}}'>
-          <image class='con-image' src='{{!active_img?"../../static/img/role-icon-while.png":"../../static/img/role-icon.png"}}'></image>
-          <text class='ft14'>我是出借人</text>
+    <view class='select-info'>
+      <view class='select-wrap'>
+        <view class='role ft16'>选择角色</view>
+        <view class='role-con row cen-center'>
+          <view class='con-left row cen-center {{!active_img?" backgrund-576c94":""}}'>
+            <image class='con-image' src='{{!active_img?"../../static/img/role-icon-while.png":"../../static/img/role-icon.png"}}'></image>
+            <text class='ft14'>我是出借人</text>
+          </view>
+          <view class='con-right row cen-center'>
+            <image class='con-image' src='../../static/img/role-icon.png'></image>
+            <text class='ft14'>我是见证人</text>
+          </view>
         </view>
-        <view class='con-right row cen-center'>
-          <image class='con-image' src='../../static/img/role-icon.png'></image>
-          <text class='ft14'>我是见证人</text>
+        <view class='name ft16'>选择角色</view>
+        <view class='name-input'>
+          <input placeholder='请填写真实姓名' placeholder-class='placeholder'></input>
         </view>
-      </view>
-      <view class='name ft16'>选择角色</view>
-      <view class='name-input'>
-        <input placeholder='请填写真实姓名' placeholder-class='placeholder'></input>
       </view>
     </view>
-  </view>
   </block>
+  <!-- 支付 -->
+  <block wx-if="{{true}}">
+    <view class='select-info'>
+      <view class='select-wrap'>
+        <view class='role ft16'>还款方式</view>
+        <view class='role-con row cen-center ft12'>
+          <view class='zfb row  cen-center'>
+            <image class='imgft' src='../../static/img/zfb_icon.png'></image>
+            <text>支付宝</text>
+          </view>
+          <view class='yhk row  cen-center {{!active_img?" backgrund-576c94":""}}'>
+            <image class='imgft ' src='{{!active_img?"../../static/img/yhk_icon_while.png":"../../static/img/yhk_icon.png"}}'></image>
+            <text>银行卡</text>
+          </view>
+          <view class='wx row  cen-center'>
+            <image class='imgft' src='../../static/img/wx_icon.png'></image>
+            <text>微信</text>
+          </view>
+          <view class='xj row  cen-center'>
+            <image class='imgft' src='../../static/img/xj_icon.png'></image>
+            <text>现金</text>
+          </view>
+        </view>
+        <view class='name ft16'>还款金额</view>
+        <view class='name-input'>
+          <input class='text-center' placeholder='￥' placeholder-class='placeholder'></input>
+        </view>
+      </view>
+    </view>
+  </block>
+
+
+
   <view class='btn-wrap '>
     <text class='color-b1babc ft14'>点 击 "借 条 确 认" 确 认 借 款 事 实</text>
     <view class='btn' bindtap='config'>借条确认</view>

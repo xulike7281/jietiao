@@ -1,6 +1,7 @@
 <!--pages/main/main.wxml-->
 <view class='container'>
   <view class='content'>
+    <image class='right_icon' src='{{right_icon}}'></image>
     <view class='money'>￥1000.00 </view>
     <view class='avatarUrls row cen-space'>
       <view class='jiekuanren column cen-center'>
@@ -38,14 +39,37 @@
     </view>
   </view>
   <view class='main-btn row cen-center'>
-    <image src='../../static/img/delete_icon.png'></image>
-    <text>撤销</text>
+    <view class='equal row cen-center'>
+      <image class='{{_index==1?"wh2428":""}} {{_index==2?"wh3230":""}} {{_index==2?"wh3231":""}}' src='{{btn_icon}}'></image>
+      <text>{{btn_msg}}</text>
+    </view>
+    <view class='share-r row cen-center' wx:if='{{_index==4}}'>
+      <image src='../../static/img/share_icon.png'></image>
+    </view>
   </view>
   <view class='dot-wrap row cen-center'>
-      <text class='dot {{item.id ==0?"big-dot":""}}' wx:for="{{dotList}}" wx:key="{{index}}"></text>
+    <text class='dot {{item.id ==_index?"big-dot":""}}' wx:for="{{dotList}}" wx:key="{{index}}"></text>
   </view>
-  <view class='color-b1babc ft14'> 
-    有1条借条等待借款人和见证人认证 
+  <view class='color-b1babc ft14'>
+    有1条借条等待借款人和见证人认证
   </view>
   <view class='btn'>打借条</view>
+  <!-- 弹窗 -->
+  <view class='model' wx:if="{{!isModel}}">
+    <view class='model-con column cen-start'>
+      <image class='close_icon' src='../../static/img/model_close_icon.png' bindtap='clese'></image>
+      <view class='line_icon' src='../../static/img/line_icon.png'></view>
+
+      <image class='con-top' src="../../static/img/laba_icon.png"></image>
+      <text class='text1'>一张违约借条</text>
+      <text class='text2'>逾期<text class='color-aa1224'>23</text>天仍未偿还</text>
+      <text class='text3'>损失<text class='color-aa1224'>1000元</text></text>
+      <text class='text4'>赖账不是真朋友</text>
+      <text class='text5'>帮我见证一下</text>
+      <view class='model-btn' bindtap='jianZhengBtn'>
+        我 见 证
+      </view>
+    </view>
+
+  </view>
 </view>

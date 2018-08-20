@@ -14,7 +14,16 @@ Page({
       date: e.detail.value
     })
   },
-
+  // 发起借条
+  startJietiao: function () {
+    console.log("!1")
+    wx.navigateTo({
+      url: '/pages/notarize/notarize',
+      success: function (res) { },
+      fail: function (res) { },
+      complete: function (res) { },
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

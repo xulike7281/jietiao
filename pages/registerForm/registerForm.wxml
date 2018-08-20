@@ -24,12 +24,12 @@
         <picker mode="date" value="{{date}}" start="2015-09-01" end="2020-09-01" bindchange="bindDateChange">
           <view class="pickerDate">{{date}} </view>
         </picker>
-
+  
       </view>
     </view>
   </view>
   <view class='button-wrap'>
     <view class='ft12'>点击"发起借条"分享至借款人和见证人</view>
   </view>
-  <view class='form-btn'>发起借条</view>
+  <view class='form-btn' bindtap='startJietiao'>发起借条</view>
 </view>
