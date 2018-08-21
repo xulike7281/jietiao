@@ -18,7 +18,7 @@ Page({
     }],
     btn_icon:"../../static/img/delete_icon.png",
     btn_msg:"撤销",
-    _index:4
+    _index:0
   },
 
   //  关闭弹窗

@@ -132,6 +132,7 @@
 
 .name-input {
   width: 100%;
+  font-size: 28rpx;
 }
 
 .name-input input {

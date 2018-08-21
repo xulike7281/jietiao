@@ -4,26 +4,26 @@
     <image class='right_icon' src='{{right_icon}}'></image>
     <view class='money'>￥1000.00 </view>
     <view class='avatarUrls row cen-space'>
-      <view class='jiekuanren column cen-center'>
+      <view class='jiekuanren column cen-start'>
         <view class='img-wrap'>
           <image src='https://wx.qlogo.cn/mmopen/vi_32/dw2Y9zmicR7U4ACqUWLsmf3icLBr6g2xicST2XmTrX35HVVFWtoicDgNvJUnYicdQiaCXYxibLZdWtSJeLrCiaCJrX3DZQ/132'></image>
         </view>
         <text class='margin10-top'>张三</text>
         <text>借款人</text>
       </view>
-      <view class='jiekuanren column cen-center'>
+      <view class='jiekuanren column cen-start'>
         <view class='img-wrap border-none'>
           <image src='https://wx.qlogo.cn/mmopen/vi_32/dw2Y9zmicR7U4ACqUWLsmf3icLBr6g2xicST2XmTrX35HVVFWtoicDgNvJUnYicdQiaCXYxibLZdWtSJeLrCiaCJrX3DZQ/132'></image>
         </view>
         <text class='margin10-top'>张三</text>
         <text>借款人</text>
       </view>
-      <view class='jiekuanren column cen-center'>
+      <view class='jiekuanren column cen-start'>
         <view class='img-wrap {{!borderFlag?"border-none":""}}'>
           <image wx-if="{{!borderFlag}}" src='https://wx.qlogo.cn/mmopen/vi_32/dw2Y9zmicR7U4ACqUWLsmf3icLBr6g2xicST2XmTrX35HVVFWtoicDgNvJUnYicdQiaCXYxibLZdWtSJeLrCiaCJrX3DZQ/132'></image>
         </view>
-        <text class='margin10-top'>张三</text>
-        <text>借款人</text>
+        <text class='margin10-top' wx:if="{{!borderFlag}}">张三</text>
+        <text  wx:if="{{!borderFlag}}">借款人</text>
       </view>
     </view>
     <view class='main-time row cen-sapce'>
@@ -51,11 +51,11 @@
     <text class='dot {{item.id ==_index?"big-dot":""}}' wx:for="{{dotList}}" wx:key="{{index}}"></text>
   </view>
   <view class='color-b1babc ft14'>
-    有1条借条等待借款人和见证人认证
+    有 1 条 借 条 等 待 借 款 人 和 见 证 人 认 证
   </view>
   <view class='btn'>打借条</view>
   <!-- 弹窗 -->
-  <view class='model' wx:if="{{!isModel}}">
+  <view class='model' wx:if="{{isModel}}">
     <view class='model-con column cen-start'>
       <image class='close_icon' src='../../static/img/model_close_icon.png' bindtap='clese'></image>
       <view class='line_icon' src='../../static/img/line_icon.png'></view>

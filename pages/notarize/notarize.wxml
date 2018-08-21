@@ -80,16 +80,13 @@
         </view>
         <view class='name ft16'>还款金额</view>
         <view class='name-input'>
-          <input class='text-center' placeholder='￥' placeholder-class='placeholder'></input>
+          <input class='text-center' type='number' placeholder='￥' placeholder-class='placeholder' value='{{inputValue}}' bindinput='refundFn'></input>
         </view>
       </view>
     </view>
   </block>
-
-
-
   <view class='btn-wrap '>
-    <text class='color-b1babc ft14'>点 击 "借 条 确 认" 确 认 借 款 事 实</text>
-    <view class='btn' bindtap='config'>借条确认</view>
+    <text class='color-b1babc ft14'>{{status_msg}}</text>
+    <view class='btn' bindtap='config'>{{btn_msg}}</view>
   </view>
 </view>

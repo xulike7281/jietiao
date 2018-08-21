@@ -6,14 +6,36 @@ Page({
    */
   data: {
     defalut_img: "../../static/img/role-icon.png",
-    avtive_img:"../../static/img/role-icon-while.png"
+    avtive_img:"../../static/img/role-icon-while.png",
+    inputValue:"￥",
+    status_msg: '点 击 "借 条 确 认" 确 认 借 款 事 实',
+    btn_msg:"借 条 确 认"
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   config:function(){
-   
+    wx.navigateTo({
+      url: '/pages/main/main',
+      success: function(res) {},
+      fail: function(res) {},
+      complete: function(res) {},
+    })
+  },
+  // 还款金额
+  refundFn(e){
+    console.log("value", e.detail.value, e.detail.value.indexOf("￥"))
+      if(e.detail.value.indexOf("￥")!= -1){
+        this.setData({
+          inputValue: e.detail.value
+        })
+      }else{
+
+      this.setData({
+        inputValue: "￥"+e.detail.value
+      })
+      }
   },
   onLoad: function (options) {
 

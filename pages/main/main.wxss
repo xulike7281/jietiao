@@ -31,7 +31,9 @@
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 48rpx;
 }
-
+.jiekuanren{
+  height: 148rpx;
+}
 .jiekuanren text {
   font-size: 24rpx;
   color: #9a9a9a;
